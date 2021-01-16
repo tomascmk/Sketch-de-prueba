@@ -9,6 +9,7 @@
   --live-green: #388e3c;
   --live-yellow: #ffc402;
   --font-blue: #002c4a;
+  --overlay-background: rgba(0, 0, 0, 0.39);
 }
 
 /* Tags */
@@ -107,9 +108,109 @@ a {
   width: 1rem;
   height: auto;
 }
+.equipo-icon {
+  margin-right: 0.5rem;
+}
+.person-icon {
+  width: 100%;
+  height: auto;
+}
+.accordion-button {
+  background-color: transparent !important;
+}
 
+.active{
+  background-color: transparent !important;
+  border-color: transparent !important
+}
 /* First Section */
 
 .first-section {
+  background: linear-gradient(90deg,black, #D3AF5B);
   color: var(--primary-white);
+}
+.first-section-container{
+  background-image: url(../img/background/first-section.png); 
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center;
+  height: 2000px;
+}
+.players-container{
+  width: 100%;
+}
+.active~.selected-container .selected {
+  width: 10px; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(255, 255, 255);
+}
+/* .player-title{
+  margin-left: 150px;
+} */
+/* .player-section{
+  background-color: var(--overlay-background);
+} */
+.player-title-container {
+  margin-bottom: 1rem;
+}
+.player-title {
+  width: 90%;
+}
+.players-principal {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 2%;
+}
+.players-secundario {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.players-list-container{
+  width: 100%;
+}
+.players-list{
+  background-color: var(--overlay-background);
+  width: 80%;
+  padding: 40px 70px 150px 50px;
+}
+.player-description button{
+  color: var(--primary-white);
+}
+
+.accordion-item {
+  border-bottom: solid 1px var(--primary-white) !important;
+  font-size: 0.7rem !important;
+}
+.accordion-button {
+  color: var(--primary-white) !important;
+  text-align: left;
+}
+.accordion-body, .accordion-button {
+  margin-left: 0% !important;
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+.rank {
+  padding-right: 0% !important;
+}
+.player-position {
+  border: solid var(--primary-white);
+  border-radius: 100px;
+  width: 2rem;
+  padding: 0.4rem 0.3rem;
+}
+.player-name{
+  font-weight: 300;
+}
+.player-details {
+  font-weight: 700;
+}
+.separator {
+  width: 1px;
+  height: 50%;
+  background-color: var(--primary-white);
+  border-radius: 100px;
 }
