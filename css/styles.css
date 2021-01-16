@@ -1,0 +1,115 @@
+/* Variables */
+
+:root {
+  --primary-blue: #2f4ffe;
+  --live-card-blue: #2842dc;
+  --live-card-hover: #182988;
+  --primary-white: #ffffff;
+  /* --primary-white: #d8d8d8; */
+  --live-green: #388e3c;
+  --live-yellow: #ffc402;
+  --font-blue: #002c4a;
+}
+
+/* Tags */
+body {
+  background-color: var(--primary-white) !important;
+}
+nav {
+  background-color: var(--primary-blue) !important;
+  max-width: 100% !important;
+}
+
+a {
+  color: var(--primary-white) !important;
+}
+
+/* Live Navbar */
+.live-navbar {
+  padding: 0px !important;
+  background-color: var(--live-card-blue) !important;
+  width: 100% !important;
+}
+.live-carousel {
+  height: 100% !important;
+}
+.live-container {
+  padding: 0px 4rem 0px 1rem;
+}
+.live-col {
+  padding: 0px 1px !important;
+}
+.live-card {
+  background-color: var(--live-card-blue) !important;
+  border-color: var(--primary-blue) !important;
+  width: 10rem !important;
+  color: var(--primary-white);
+  height: 6rem !important;
+  padding-top: 0.5rem;
+}
+.live-item :hover {
+  background-color: var(--live-card-hover) !important;
+}
+
+/* Menu Navbar */
+.menu-navbar {
+  background-color: var(--primary-blue) !important;
+}
+/* Legends Section */
+.legends-card {
+  margin-top: 5%;
+  border-width: 0px !important;
+}
+
+.legends-card .background-title {
+  font-size: 9rem;
+}
+
+.lang-container {
+  padding: 0px;
+}
+
+/* Buttons */
+.carousel-btn {
+  position: static !important;
+  width: auto !important;
+}
+
+.live-active {
+  background-color: var(--live-green) !important;
+  color: var(--primary-white) !important;
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  width: 70% !important;
+  height: 15% !important;
+  padding: 0% !important;
+}
+
+.live {
+  background-color: var(--live-yellow) !important;
+  color: var(--font-blue) !important;
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  width: 70% !important;
+  height: 15% !important;
+  padding: 0% !important;
+}
+
+.lang-btn {
+  border-left: solid 1px var(--primary-white);
+  font-weight: 200;
+}
+.lang-btn-active {
+  font-weight: 500;
+}
+
+.social-icon {
+  width: 1rem;
+  height: auto;
+}
+
+/* First Section */
+
+.first-section {
+  color: var(--primary-white);
+}

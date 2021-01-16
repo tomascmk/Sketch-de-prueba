@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav
+        class="navbar navbar-expand-lg navbar-light live-navbar rounded-top"
+        style="z-index: 999"
+      >
+        <div class="container-fluid row">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 wk-list"
+              style="max-width: 18rem"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle flex-column"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  WK 1
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">WK 2</a></li>
+                  <li><a class="dropdown-item" href="#">WK3</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">WK 4</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div
+              id="carouselExampleControls carousel-container"
+              class="carousel slide me-auto"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner live-container">
+                <div class="carousel-item active">
+                  <div class="row row-cols-10">
+                    <div class="live-col col">
+                      <div class="card live-card rounded-0">
+                        <div class="card-text">
+                          <div
+                            class="result-container d-flex justify-content-evenly"
+                          >
+                            <p class="">a</p>
+                            <p class="">FLA</p>
+                            <p class="">2</p>
+                          </div>
+                          <div
+                            class="result-container d-flex justify-content-evenly"
+                          >
+                            <p class="">a</p>
+                            <p class="">FLU</p>
+                            <p class="">3</p>
+                          </div>
+                        </div>
+                        <a
+                          href="#"
+                          class="btn rounded-0 rounded-top live-active position-absolute bottom-0 start-50 translate-middle-x"
+                          >LIVE</a
+                        >
+                      </div>
+                    </div>
+                    <div class="live-col col">
+                      <div class="card live-card rounded-0">
+                        <div class="">
+                          <div class="card-text">
+                            <div
+                              class="result-container d-flex justify-content-evenly"
+                            >
+                              <p class="">a</p>
+                              <p class="">FLA</p>
+                              <p class="">-</p>
+                            </div>
+                            <div
+                              class="result-container d-flex justify-content-evenly"
+                            >
+                              <p class="">a</p>
+                              <p class="">FLU</p>
+                              <p class="">-</p>
+                            </div>
+                          </div>
+                          <a
+                            href="#"
+                            class="btn rounded-0 rounded-top live position-absolute bottom-0 start-50 translate-middle-x"
+                            >10.11 16hs</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+                <i class="bi bi-caret-right-fill"></i>
+              </a>
+            </div>
+            <div class="lang-container">
+              <ul class="nav flex-column justify-content-end lang-container">
+                <li class="nav-item lang-btn">
+                  <a class="nav-link" aria-current="page" href="#">ES</a>
+                </li>
+                <li class="nav-item lang-btn">
+                  <a class="nav-link active" href="#">EN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- As a heading -->
+      <nav class="navbar sticky-top navbar-expand-lg" style="z-index: 998">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TEAMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PLAYERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">STANDING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HIGHLIGHTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AO VIVO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">BRASILEIRAO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SOCIAL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="card bg-dark text-white justify-content-end legends-card">
+        <div class="">
+          <h1 class="card-title text-center">THE LEGENDS</h1>
+
+          <h1 class="card-title text-end background-title">THE LEGENDS</h1>
+          <div class="card" style="color: black; width: 60%">
+            <div class="card-header">Featured</div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="" async defer></script>
+  </body>
+</html>
