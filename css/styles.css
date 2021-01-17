@@ -67,6 +67,14 @@ footer {
 .menu-navbar {
   background-color: var(--primary-blue) !important;
 }
+.nav-brasileirao {
+  height: fit-content;
+  background-image: url(../img/background/aro.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position: left bottom;
+  background-color: transparent;
+}
 /* Legends Section */
 .legends-card {
   margin-top: 5%;
@@ -137,12 +145,15 @@ footer {
   background-color: transparent !important;
 }
 .a-brasileirao {
+  margin-left: 5%;
+}
+.btn-brasileirao {
   height: 70px;
-  width: 50px;
+  width: 70px;
   background-image: url(../img/icon/brasileirao.png);
   background-repeat: no-repeat;
-  background-size: cover !important;
-  background-position: center;
+  background-size: 200px;
+  background-position: center center;
   background-color: transparent;
   border: 0px;
 }
