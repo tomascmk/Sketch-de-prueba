@@ -426,11 +426,14 @@ footer {
 }
 .footer-container {
   height: fit-content;
-  background-image: url(../img/icon/aro_2.png);
+  background-image: url(../img/background/aro.png);
   background-repeat: no-repeat;
-  background-size: cover !important;
-  background-position: -2000% center;
+  background-size: auto 100%;
+  background-position: right center;
   background-color: transparent;
+}
+.footer-container div {
+  opacity: 1 !important;
 }
 .footer-list-container {
   padding: 50px 0px;
@@ -447,7 +450,7 @@ footer {
   text-decoration: none;
 }
 .footer-logo {
-  height: auto;
   width: 35%;
+  height: auto;
   padding: 50px 0px;
 }
