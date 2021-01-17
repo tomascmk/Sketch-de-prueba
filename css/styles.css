@@ -27,7 +27,9 @@ nav {
 a {
   color: var(--primary-white) !important;
 }
-
+section {
+  overflow: hidden;
+}
 footer {
   height: fit-content;
   background-color: var(--primary-blue);
@@ -422,8 +424,19 @@ footer {
   width: 100%;
   transform: translateY(-50%);
 }
+.footer-container {
+  height: fit-content;
+  background-image: url(../img/icon/aro_2.png);
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: -2000% center;
+  background-color: transparent;
+}
+.footer-list-container {
+  padding: 50px 0px;
+}
 .footer-list-header {
-  font-weight: 300;
+  font-weight: 600;
   color: var(--font-blue);
 }
 .footer-list {
@@ -432,4 +445,9 @@ footer {
 }
 .footer-list li a {
   text-decoration: none;
+}
+.footer-logo {
+  height: auto;
+  width: 35%;
+  padding: 50px 0px;
 }
