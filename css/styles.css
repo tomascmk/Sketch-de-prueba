@@ -62,6 +62,10 @@ footer {
 .live-item :hover {
   background-color: var(--live-card-hover) !important;
 }
+.navbar-icon {
+  height: 25px;
+  width: auto;
+}
 
 /* Menu Navbar */
 .menu-navbar {
@@ -111,6 +115,10 @@ footer {
   height: 15% !important;
   padding: 0% !important;
 }
+.live-active:hover {
+  background-color: var(--live-green) !important;
+  color: var(--primary-white) !important;
+}
 
 .live {
   background-color: var(--live-yellow) !important;
@@ -121,7 +129,10 @@ footer {
   height: 15% !important;
   padding: 0% !important;
 }
-
+.live:hover {
+  background-color: var(--live-yellow) !important;
+  color: var(--font-blue) !important;
+}
 .lang-btn {
   border-left: solid 1px var(--primary-white);
   font-weight: 200;
