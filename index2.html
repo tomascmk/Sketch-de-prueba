@@ -290,7 +290,7 @@
 
       <!-- Start Menu Navbar-->
 
-      <nav class="navbar navbar-expand-lg menu-navba sticky-top">
+      <nav class="navbar navbar-dark navbar-expand-lg menu-navba sticky-top">
         <div class="container-fluid">
           <div class="brasileirao-container">
             <a class="navbar-brand" href="#">
@@ -906,8 +906,9 @@
                   <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="carousel-video-indicator"></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="carousel-item video-item active row justify-content-center" data-bs-interval="999999999">
-                    <div class="col">
+                  <div class="carousel-item video-item active row justify-content-around" data-bs-interval="999999999">
+                    <div class="col row video-box">
+                      <div class="col">
                       <div class="video row d-flex align-content-center">
                         <img src="./img/icon/play.svg" alt="" class="col">
                       </div>
@@ -919,7 +920,9 @@
                       </div>
                       Rivaldo (Sao Paulo)
                     </div>
-                    <div class="col">
+                    </div>
+                    <div class="col row video-box">
+                      <div class="col">
                       <div class="video row d-flex align-content-center">
                         <img src="./img/icon/play.svg" alt="" class="col">
                       </div>
@@ -930,6 +933,7 @@
                         <img src="./img/icon/play.svg" alt="" class="col">
                       </div>
                       Neymar (santos)
+                    </div>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="999999999">
@@ -988,26 +992,134 @@
             </div>
           </div>
         </div>
-
+        <div class="transition"></div>
       </section>
       <!-- End First section -->
       <!-- Start Second section -->
       <section class="second-section">
         <div class="second-section-container">
-          <div class="transition"></div>
+          <!--<div-- class="transition"></div-->
           <div class="tweets-container">
             <div class="player-title-container d-flex justify-content-center">
               <div class="player-title d-flex align-items-center">
                 <span class="players-principal">MEMORIES AND STORIES</span>
               </div>
             </div>
+
+            <div class="video-container d-flex justify-content-center">
+              <div class="video-carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carousel-video-indicator"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="carousel-video-indicator"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="carousel-video-indicator"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item d-flex active row justify-content-around" data-bs-interval="999999999">
+                      <div class="col row video-box">
+                        <div class="col">
+                        <div class="tweets row d-flex align-content-center">
+                        </div>
+                        Romario (Flamengo)
+                      </div>
+                      <div class="col">
+                        <div class="tweets row d-flex align-content-center">
+                        </div>
+                        Rivaldo (Sao Paulo)
+                      </div>
+                      <div class="col">
+                      <div class="tweets row d-flex align-content-center">
+                      </div>
+                      Cafu (Sao Paulo)
+                    </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="999999999">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="999999999">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
       </section>
       <!-- End Second section -->
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <div class="title-container">
+          <div class="d-flex justify-content-center">
+            <div class="text-center">
+              <h5 class="title-broadcast">BRASILEIRAO OFFICIAL</h5>
+              <h5 class="title-broadcast">BROADCASTERS</h5>
+            </div>
+        </div>
+      </div>
+      </div>
+      <div class="row justify-content-center text-center" style="margin-top: 6rem">
+        <a class="col broadcaster-a" href="#"><h6>PORTUGAL</h6></a>
+        <a class="col broadcaster-a" href="#"><h6>UK</h6></a>
+        <a class="col broadcaster-a" href="#"><h6>RUSSIA</h6></a>
+        <a class="col broadcaster-a" href="#"><h6>BALCANES</h6></a>
+        <a class="col broadcaster-a" href="#"><h6>AFRICA</h6></a>
+        <a class="col broadcaster-a" href="#"><h6>CARIBE</h6></a>
+      </div>
+
+      <div class="brasileirao-international-container">
+        <div class="brasileirao-international d-flex justify-content-end align-content-center">
+          <h5>BRASILEIRAO INTERNATIONAL</h5>
+        </div>
+      </div>
+      <div class="last-part row">
+        <div class="col-4">
+          <img src="./img/icon/brasileirao.png" alt="">
+        </div>
+        <div class="col-8 row">
+          <div class="col">
+            <h5 class="footer-list-header">BRASILEIRAO</h5>
+            <ul class="footer-list">
+              <li><a href="#">Teams</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Highlights</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5 class="footer-list-header">SOCIAL</h5>
+            <ul class="footer-list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Tik Tok</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5 class="footer-list-header">VIDEOS</h5>
+            <ul class="footer-list">
+              <li><a href="#">Full Matches</a></li>
+              <li><a href="#">Highlights</a></li>
+              <li><a href="#">The Scout</a></li>
+              <li><a href="#">The Bests</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5 class="footer-list-header">SECTIONS</h5>
+            <ul class="footer-list">
+              <li><a href="#">Rising Stars</a></li>
+              <li><a href="#">The Top 10</a></li>
+              <li><a href="#">Legends</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="" async defer></script>
   </body>
 </html>

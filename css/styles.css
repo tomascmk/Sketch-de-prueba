@@ -10,8 +10,9 @@
   --live-yellow: #ffc402;
   --font-blue: #002c4a;
   --overlay-background: rgba(0, 0, 0, 0.39);
-  --second-section: #002E4C;
-  --twitter-color: #7DCCF0;
+  --transition-color: #032d44;
+  --second-section: #002e4c;
+  --twitter-color: #7dccf0;
 }
 
 /* Tags */
@@ -25,6 +26,12 @@ nav {
 
 a {
   color: var(--primary-white) !important;
+}
+
+footer {
+  height: fit-content;
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
 }
 
 /* Live Navbar */
@@ -137,33 +144,33 @@ a {
   background-color: transparent;
   border: 0px;
 }
-.a-brasileirao a{
+.a-brasileirao a {
   width: 100%;
   height: 100%;
 }
 .icon-brasileirao {
   max-height: 70px;
 }
-.active{
+.active {
   background-color: transparent !important;
-  border-color: transparent !important
+  border-color: transparent !important;
 }
 /* First Section */
 
 .first-section {
-  background: linear-gradient(90deg,black, #D3AF5B);
+  background: linear-gradient(90deg, black, #d3af5b);
   color: var(--primary-white);
 }
-.first-section-container{
-  background-image: url(../img/background/first-section.png); 
+.first-section-container {
+  background-image: url(../img/background/first-section.png);
   background-repeat: no-repeat;
   background-size: cover !important;
-  background-position: center bottom;
+  background-position: center left;
 }
 .title-container {
   padding-top: 4rem;
 }
-.title h1{
+.title h1 {
   font-weight: 700;
   font-size: 4rem;
 }
@@ -173,19 +180,19 @@ a {
   margin-top: -50px;
   z-index: 1;
 }
-.title-shadow h1{
+.title-shadow h1 {
   color: rgba(255, 255, 255, 0.075);
   font-weight: 600;
   font-size: 11rem;
 }
-.players-container{
+.players-container {
   width: 100%;
   height: 600px;
   z-index: 2;
 }
-.active~.selected-container .selected {
-  width: 10px; 
-  height: 0; 
+.active ~ .selected-container .selected {
+  width: 10px;
+  height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid rgb(255, 255, 255);
@@ -212,10 +219,10 @@ a {
   font-size: 0.8rem;
   font-weight: 100;
 }
-.players-list-container{
+.players-list-container {
   width: 100%;
 }
-.players-list{
+.players-list {
   background-color: var(--overlay-background);
   width: 80%;
   padding: 40px 70px 150px 50px;
@@ -223,7 +230,7 @@ a {
   z-index: 2;
   max-height: 540px;
 }
-.player-description button{
+.player-description button {
   color: var(--primary-white);
 }
 
@@ -235,7 +242,8 @@ a {
   color: var(--primary-white) !important;
   text-align: left;
 }
-.accordion-body, .accordion-button {
+.accordion-body,
+.accordion-button {
   margin-left: 0% !important;
 }
 .accordion-button::after {
@@ -250,7 +258,7 @@ a {
   width: 2rem;
   padding: 0.4rem 0.3rem;
 }
-.player-name{
+.player-name {
   font-weight: 300;
 }
 .player-details {
@@ -262,39 +270,44 @@ a {
   background-color: var(--primary-white);
   border-radius: 100px;
 }
-.legends-container{
+.legends-container {
   margin-top: 50px;
 }
 .video-container,
-.memories-container{
+.memories-container {
   margin-top: 50px;
 }
-.memories-container{
+.memories-container {
   height: 400px;
-  padding-bottom: 500px;
 }
-.video-carousel{
-  width: 70%;
+.video-carousel {
+  width: 100%; /* CAMBIAR */
 }
-.memories-carousel{
-  width: 80%;
+.memories-carousel {
+  width: 100%; /* CAMBIAR */
 }
 .video-carousel,
-.memories-carousel{
+.memories-carousel {
   height: auto;
 }
 .video-item,
 .memories-item {
   display: flex !important;
 }
+.video-box {
+  visibility: hidden;
+}
+.active > .video-box {
+  visibility: visible !important;
+}
 .video,
 .memories {
   height: 200px;
   background-color: #000000;
-  margin-left: 2% !important;
+  /*margin-left: 2% !important;*/
 }
-.video{
-  width: 370px;
+.video {
+  width: 25%;
   min-height: 200px;
   min-width: 300px;
 }
@@ -302,7 +315,7 @@ a {
   height: 50%;
   width: 50%;
 }
-.memories{
+.memories {
   margin: 0px 30px;
   height: 250px;
   width: 600px;
@@ -310,51 +323,113 @@ a {
   min-width: 600px;
   position: relative;
 }
-.carousel-indicators{
+.tweets {
+  width: 30%;
+  min-height: 200px;
+  min-width: 300px;
+  background-color: #00000036;
+}
+.carousel-indicators {
   bottom: -45px !important;
 }
 .carousel-video-indicator,
-.carousel-memories-indicator{
+.carousel-memories-indicator {
   width: 10px !important;
-    height: 10px !important;
-    background-color: var(--primary-white) !important;
-    border-radius: 10px !important;
+  height: 10px !important;
+  background-color: var(--primary-white) !important;
+  border-radius: 10px !important;
 }
-.desc-container{
+.desc-container {
   height: 40%;
   width: 100%;
-  background: linear-gradient(black,  #2b2b2b,  #474747, #474747);
+  background: linear-gradient(black, #2b2b2b, #474747, #474747);
   bottom: 0px;
   position: absolute;
 }
-.subtitle{
+.subtitle {
   margin-left: 0px !important;
   padding-left: 0px !important;
 }
 
 /* Second Section */
-.second-section{
+.second-section {
   overflow: hidden;
   background-color: var(--second-section);
-  height: 1000px;
-  color: var(--twitter-color)
+  height: 500px;
+  color: var(--twitter-color);
 }
-.second-section-container{
-  background-image: url(../img/background/second-section.png); 
+.second-section-container {
+  background-image: url(../img/background/second-section.png);
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: center bottom;
+  height: 100%;
+  padding-top: 100px;
 }
+
 .transition {
-  background-color: var(--second-section);
-  height: 500px;
-  width: 150%;
-  transform: rotate(-7.5deg);
-  position: absolute;
-  margin-top: -200px;
-  margin-left: -50px !important;
-}
-.tweets-container{
-  position: absolute;
+  background-color: transparent;
   width: 100%;
+  height: 200px;
+  border-left: 1500px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 200px solid var(--transition-color);
+  bottom: 0;
+}
+.tweets-container {
+  width: 100%;
+}
+.title-broadcast {
+  font-weight: 300;
+}
+.broadcaster-a {
+  text-decoration: none;
+  color: var(--live-yellow);
+}
+.broadcaster-a h6,
+.brasileirao-international h5 {
+  color: var(--live-yellow);
+}
+.brasileirao-international-container {
+  margin-top: 4rem;
+  text-align: center;
+  position: relative;
+}
+.brasileirao-international {
+  position: relative;
+}
+.brasileirao-international h5 {
+  padding: 7px;
+  width: fit-content;
+  background-color: var(--live-card-blue);
+  margin-right: 80px;
+  margin-bottom: 0px;
+}
+
+.links {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.brasileirao-international-container:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 1px solid var(--live-card-blue);
+  background: var(--live-card-hover);
+  width: 100%;
+  transform: translateY(-50%);
+}
+.footer-list-header {
+  font-weight: 300;
+  color: var(--font-blue);
+}
+.footer-list {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer-list li a {
+  text-decoration: none;
 }
