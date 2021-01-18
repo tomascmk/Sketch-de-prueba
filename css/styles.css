@@ -107,7 +107,7 @@ footer {
   background-image: url(../img/background/aro.png);
   background-repeat: no-repeat;
   background-size: 250px;
-  background-position: left bottom;
+  background-position: left -140px;
   background-color: transparent;
 }
 .dropdown-menu {
@@ -295,10 +295,11 @@ footer {
 .players-list {
   background-color: var(--overlay-background);
   width: 100%;
-  padding: 40px 0px 0px 0px;
+  padding: 40px 0px 150px 0px;
   position: absolute;
   z-index: 2;
   max-height: 540px;
+  max-width: 1500px;
 }
 .player-description button {
   color: var(--primary-white);
@@ -388,18 +389,26 @@ footer {
   width: 50%;
 }
 .memories {
-  margin: 0px 30px;
+  overflow: hidden;
   height: 250px;
   width: 600px;
   min-height: 250px;
-  min-width: 600px;
+  min-width: 400px;
+  max-width: 600px !important;
   position: relative;
+  padding: 0% !important;
+  margin: 10px 0% !important;
+}
+.memories div {
+  height: fit-content;
+  padding: 35px 0px 10px 15px;
 }
 .tweets {
   width: 30%;
   min-height: 200px;
   min-width: 300px;
   background-color: #00000036;
+  margin-bottom: 30px;
 }
 .carousel-indicators {
   bottom: -45px !important;
@@ -427,7 +436,7 @@ footer {
 .second-section {
   overflow: hidden;
   background-color: var(--second-section);
-  height: 500px;
+  height: fit-content;
   color: var(--twitter-color);
 }
 .second-section-container {
@@ -516,13 +525,21 @@ footer {
   list-style: none;
   padding-left: 0px;
 }
+.footer-list-container div{
+  min-width: fit-content;
+}
 .footer-list li a {
   text-decoration: none;
 }
+.logo-container{  
+  min-width: 250px;
+}
+
 .footer-logo {
   width: 35%;
   height: auto;
   padding: 50px 0px;
+  min-width: 160px;
 }
 
 @media (min-width: 740px) {
@@ -547,11 +564,18 @@ footer {
   .title-shadow h1 {
     font-size: 9rem;
   }
+  .tweet{
+    margin-bottom: 0px;
+  }
+  
 }
 
 @media (min-width: 1142px) {
   .title-shadow h1 {
     font-size: 11rem;
+  }
+  .memories{
+    padding: 0px !important;
   }
 }
 @MEDIA (min-width: 1500px){
