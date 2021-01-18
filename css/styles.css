@@ -554,3 +554,13 @@ footer {
     font-size: 11rem;
   }
 }
+@MEDIA (min-width: 1500px){
+  .transition {
+    border-left: 2500px solid transparent;
+  }
+}
+@MEDIA (min-width: 2500px){
+  .transition {
+    border-left: 3000px solid transparent;
+  }
+}
